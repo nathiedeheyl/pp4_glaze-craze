@@ -8,6 +8,7 @@
 }
 
 /* header */
+
 .header-title {
     background: lightblue;
     text-align: center;
@@ -40,4 +41,28 @@
 
 .active {
     border-bottom: 1px solid;
+}
+
+/* footer */
+
+footer {
+    background-color: lightblue;
+    text-align: center;
+}
+
+footer span {
+    padding: 0.5rem;
+}
+
+#social-networks {
+    padding: 0.8rem 0; 
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+     font-size: 160%;
+     padding: 5%;
+     color: #393434;
 }
