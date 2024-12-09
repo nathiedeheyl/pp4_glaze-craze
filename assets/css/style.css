@@ -1,0 +1,43 @@
+/* base styles */
+/* asterisk wildcard selector */
+* {
+    padding: 0;
+    margin: 0;
+    /* Ensures padding doesn't exceed the width */
+    box-sizing: border-box;
+}
+
+/* header */
+.header-title {
+    background: lightblue;
+    text-align: center;
+}
+
+.header-title h1 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+/* navigation bar */
+
+.nav-bar {
+    background-color: lightblue;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-bar li {
+    display: inline;
+    padding: 0.5rem;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    border-bottom: 1px solid;
+}
