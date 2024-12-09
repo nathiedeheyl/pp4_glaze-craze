@@ -15,30 +15,22 @@ body {
     font-family: 'Georgia', sans-serif;
 }
 
-/* header */
+/* header and nav bar */
 
-.header-title {
+header {
     background: lightblue;
     text-align: center;
 }
 
-.header-title h1 {
+.header-title {
     font-size: 1.5rem;
     padding: 0.5rem;
 }
 
-/* navigation bar */
-
 .nav-bar {
-    background-color: lightblue;
-    text-align: center;
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
-}
-
-.nav-bar li {
-    display: inline;
     padding: 0.5rem;
 }
 
