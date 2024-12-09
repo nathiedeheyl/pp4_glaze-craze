@@ -1,38 +1,157 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Glaze Craze
+Where creativity meets community – design, vote, and collect pottery with Glaze Drops!
 
-Welcome USER_NAME,
+## General
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+### Project purpose
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+The Glaze Craze is a pottery-focused web platform where users can submit design ideas, vote for their favorites using a points-based system called Glaze Drops, and "purchase" featured pottery items with these points. The project showcases skills in user authentication, CRUD functionality (create, read, update, delete) for design submissions, a voting system, and an interactive shop experience, all tied to a gamified currency (the Glaze Drops). It mimics an e-commerce experience while fostering community engagement through comments and voting, without involving real payments.
 
-## Gitpod Reminders
+### Project Scope
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+**Core Goals:**
+  - Build a user-friendly web application that includes user authentication (sign-up, log in and stay logged in, log out), user interactions (create, save, edit, delete and interact with other user's posts), and item-based transactions
+  - Introduce a gamified system with Glaze Drops to add interactivity and user engagement
 
-`python3 -m http.server`
+**Key Features:**
+  - User registration and login with a "remember me" feature
+  - Database for storing user data, Glaze Drops balance, and shared and "purchased" pottery designs
+  - Functionality to create edit, delete, and share design submissions ("items")
+  - A voting and commenting system for designs
+  - A "shop" where users can spend Glaze Drops on pottery items or their designs
 
-A blue button should appear to click: _Make Public_,
+### MVP
 
-Another blue button should appear to click: _Open Browser_.
+<details>
+<summary>Must-have features</summary>
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+<br>
 
-A blue button should appear to click: _Make Public_,
+*Home page:*
+- After log in a personal greeting is displayed to the logged in User
+- Presenting "the artist" and it's mission and journey
 
-Another blue button should appear to click: _Open Browser_.
+*User Authentication:*
+- User registration and login with email/password using form
+- Remember me functionality
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+*Glaze Drops System:*
+- Default Glaze Drops balance on user registration (e.g., 100 Glaze Drops)
+- Increment drops for actions like voting, commenting, or submitting designs
+- Deduct drops for "purchasing" items
 
-To log into the Heroku toolbelt CLI:
+*Design Requests (Items):*
+- Users can create, edit, and delete design submissions
+- Each submission includes a title, description, and optional image upload
+- Upload of a design request = 10 Glaze Drops
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+*Community Engagement:*
+- Users can comment on design requests
+- Commenting = 5 Glaze Drops
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+*Voting System:*
+- Users can vote one time for a design
+- Display the total votes for each design
+- Voting = 1 Glaze Drops
+
+*Shop Feature:*
+- A dedicated shop page displaying pottery items
+- Users can buy items using their Glaze Drops
+
+*User Profile:*
+- Display user info (name, email, etc.)
+- Show current Glaze Drops balance
+- List of their submitted designs and purchase history
+</details>
+
+### Other MoSCoW features
+
+<details>
+<summary>Should-have features</summary>
+<br>
+
+1. User Profile Page
+- Show user info (name, email).
+- Display Glaze Drops balance and submitted design requests.
+- Include a list of purchased items.
+
+2. Leaderboard for Top Voted Designs
+- Display the most popular design requests for increased visibility.
+</details>
+
+<br>
+
+<details>
+<summary>Could-have features</summary>
+<br>
+
+1. Advanced Image Validation
+- Add backend validation for image size and format.
+- Provide error messages for oversized or invalid images.
+2. Transaction history in User Profile Page
+</details>
+
+## UX Design 
+
+### Design brief
+
+...
+
+### User stories
+
+**As a new user...**
+
+- ... I want to land on the shop page and see the available pottery items and a brief introduction to the site, so I can quickly understand what the website is about and what it offers.
+- ... I want to see a short introduction to the artist, so I understand the mission behind the project.
+- ... I want to view the navigation bar and see clearly labeled sections of the site, so I know where to go next.
+- ... I want to register, log in securely, and have the option to stay logged in for convenience.
+- ... 
+
+**As a registered user...**
+
+- ... I want to see a personalized greeting and my Glaze Drops balance on the home page so I feel recognized and motivated to engage with the platform.
+- ... I want to upload design requests with an optional image, edit my submissions, and delete them if needed.
+- ... I want to leave comments on design requests to share feedback and interact with the community.
+- ... I want to vote for design requests and see the total votes for each request to support my favorite ideas.
+- ... I want to earn and spend Glaze Drops based on my actions on the website, so I can engage in the community and buy items.
+- ... I want to buy items in the artist's shop so that I ...
+- ... I want to receive instant feedback when filling out forms to ensure my input is valid.
+
+**As the site owner...**
+
+- ...
+
+## Features
+
+**Key features**
+
+1. Submit pottery design ideas and requests
+2. Vote for their favorite designs
+3. Collect points in an in-platform currency called Glaze Drops by sharing, voting and commenting
+4. "Purchase digital items" using Glaze Drops
+
+### Existing features
+
+### Future features
+
+- Duplicate Submission Prevention to avoid spam and redundancy
+- Content Moderation ot ensure a safe community environment
+- Admin User Role
+- Display of item count in shopping basket on home/shop
+- Wishlist
+- Real Payment System
+- Admin interface for easier adding, editing and removing items to the shop
+- Follower/Messagin system/option for users to connect
+
+## Technologies 
+
+## Manual Testing Write up
+
+## Deployment
+
+_Forking, cloning ..._
+
+## References
 
 ### Connecting your Mongo database
 
@@ -49,83 +168,3 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
 ------
 
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**June 18, 2024,** Add Mongo back into template
-
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
-
-**May 28 2024:** Fix Mongo and Links installs
-
-**April 26 2024:** Update node version to 16
-
-**September 20 2023:** Update Python version to 3.9.17.
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
