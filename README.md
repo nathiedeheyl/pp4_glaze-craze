@@ -153,6 +153,10 @@ _Forking, cloning ..._
 
 ## References
 
+### Media credits
+
+- favicon: https://favicon.io/emoji-favicons/funeral-urn
+
 ### Connecting your Mongo database
 
 - **Connect to Mongo CLI on a IDE**
