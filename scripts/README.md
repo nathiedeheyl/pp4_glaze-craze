@@ -99,27 +99,7 @@ The Glaze Craze is a pottery-focused web platform where users can submit design 
 
 ### User stories
 
-**As a new user...**
-
-- ... I want to land on the shop page and see the available pottery items and a brief introduction to the site, so I can quickly understand what the website is about and what it offers.
-- ... I want to see a short introduction to the artist, so I understand the mission behind the project.
-- ... I want to view the navigation bar and see clearly labeled sections of the site, so I know where to go next.
-- ... I want to register, log in securely, and have the option to stay logged in for convenience.
-- ... 
-
-**As a registered user...**
-
-- ... I want to see a personalized greeting and my Glaze Drops balance on the home page so I feel recognized and motivated to engage with the platform.
-- ... I want to upload design requests with an optional image, edit my submissions, and delete them if needed.
-- ... I want to leave comments on design requests to share feedback and interact with the community.
-- ... I want to vote for design requests and see the total votes for each request to support my favorite ideas.
-- ... I want to earn and spend Glaze Drops based on my actions on the website, so I can engage in the community and buy items.
-- ... I want to buy items in the artist's shop so that I ...
-- ... I want to receive instant feedback when filling out forms to ensure my input is valid.
-
-**As the site owner...**
-
-- ...
+https://docs.google.com/spreadsheets/d/1jqOVpe2f_0CdKMf52pZD2N2SH2e1sgSe9R-3Mk8zKZA/edit?gid=0#gid=0
 
 ## Features
 
