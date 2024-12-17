@@ -16,7 +16,6 @@ body {
 }
 
 /* HEADER */
-
 header {
     background: lightblue;
     text-align: right;
@@ -26,25 +25,38 @@ header {
     padding: 0.5rem;
 }
 
+header > a {
+    text-decoration: none;
+    color: black;
+}
+
 .header-title {
     font-size: 1rem;
     margin: 0.3rem;
     padding: 0.3rem 0 0;
 }
 
+/* DROPDOWN MENU */
 .navbar {
     background-color: rgba(173, 216, 230, 0.8);
     backdrop-filter: blur(15px);
     position: absolute;
-    right: 8px;
     top: 55px;
+    right: -270px;
     width: 270px;
     border-radius: 10px;
-    display: none;
+    opacity: 0;
+    transition: all 1s ease-in;
+    z-index: 100;
 }
 
 .navbar.on {
-    display: block;
+    opacity: 1;
+    right: 5px;
+}
+
+.navbar.off {
+    transition: none;
 }
 
 .nav-links {
@@ -102,13 +114,13 @@ footer p  {
 /* LARGE SCREENS (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     /* HEADER */
-
     .header-title {
         font-size: 1.5rem;
         position: sticky;
         padding: 0.5rem;
     }
 
+    /* NAVIGATION LINKS */
     .navbar {
         position: sticky;
         list-style-type: none;
