@@ -122,9 +122,15 @@ footer p  {
 
     /* NAVIGATION LINKS */
     .navbar {
-        position: sticky;
-        list-style-type: none;
+        /* reset dropdown styles for larger screens */
+        position: static;
         display: flex;
+        opacity: 1;
+        right: auto;
+        transition: none;
+        backdrop-filter: none;
+        width: auto;
+        list-style-type: none;
         justify-content: space-evenly;
         padding: 0.5rem;
     }
